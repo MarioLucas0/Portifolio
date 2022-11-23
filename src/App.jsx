@@ -1,6 +1,7 @@
-import { useState } from 'react'
-import { Header } from './components/Header'
-import { Home } from './page/Home'
+import { useState } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Header } from './components/Header';
+import { Home } from './page/Home';
 
 
 export const App = () => {
@@ -8,8 +9,10 @@ export const App = () => {
 
   return ( 
     <>
-     <Header />
-      <Home/>
+      <Router>
+      <Header />
+        <Home/>
+      </Router>
     </>
   )
 }

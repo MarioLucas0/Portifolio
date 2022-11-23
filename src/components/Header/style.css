@@ -6,16 +6,28 @@
 
 .navbar{
   display: flex;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
-  height: 75px;
-  background-color: #407BFF;
+  height: 9rem;
+  background-color: rgba(14, 9, 27, 0.996);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-bottom:2px solid  #0D1117;
   color: white;
   transition: all 0.5s ease-in-out;
+  position: fixed;
+ 
  
 }
 .logo{
   font-size: 30px;
+  font-family: 'Archivo Black', sans-serif;
+  display: flex;
+  
+}
+.iconLogo{
+  margin-left: 2rem;
+  height: 4rem;
 }
 
 .nav-links{
@@ -58,7 +70,7 @@
       display: block;
       list-style: none;
       left: 0;
-      background-color: #407BFF;
+      background-color: #040405;
       top :75px;
       transition: all 0.5s ease-out;
       width: 100%;
@@ -83,7 +95,7 @@
       position: absolute;
       font-size: 30px;
       color: aliceblue;
-      background-color: #407BFF;
+      background-color: #040405;
       border: none;
       outline: none;
       top: 15px;
