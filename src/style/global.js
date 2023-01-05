@@ -1,6 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+    :root {
+      --main-bg-color: #030917;
+      --color-blue-500:  #1850E1;
+      --color-blue-700: #0C2A75;
+      --color-gray-500:  #6c757d;
+    }
   * {
     margin: 0;
     padding: 0;
@@ -9,9 +15,10 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     list-style: none;
     outline: 0;
+  
   }
   body {
-    background-color: #E5E5E5;
+    background-color: var(--main-bg-color);
   } 
 
   html {
@@ -21,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
   
-   min-height:100%;
+   height:100%;
    position:relative;
    overflow-x: hidden;
 
@@ -31,6 +38,10 @@ const GlobalStyle = createGlobalStyle`
     max-width: 100%;
     display: block;
   }
+  .text-gray {
+    color: #CCD6F6;
+  }
+ 
 `
 
 export default GlobalStyle;

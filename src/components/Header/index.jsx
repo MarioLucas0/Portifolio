@@ -9,14 +9,15 @@ export const Header = () => {
   const [isMobile, setMobile] = useState(false)
     
   return (
-    
+ 
     <nav className="navbar">
+        <div className='container'>
             <h3 className="logo">MarioLucas 
-             <img src={iconLogo} alt=""  className="iconLogo"/>
+            <img src={iconLogo} alt=""  className="iconLogo"/>
             </h3>
             <ul className={isMobile ? "nav-links-mobile" : "nav-links"}
             onClick={() => setMobile(false)}>
-                 <Link to="/" className="home">
+                <Link to="/" className="home">
                     <li>start</li>
                 </Link>
                 <Link to="/" className="catalogo">
@@ -32,6 +33,8 @@ export const Header = () => {
             <button className="mobile-menu-icon" onClick={() => setMobile(!isMobile)}>
                 {isMobile ? (<i className="fas fa-times"><FaTimes/></i>) : (<i className="fas fa-bars"><FaBars/></i>)}
             </button>
+            </div>
         </nav>
+
     )
 };
