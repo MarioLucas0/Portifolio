@@ -41,6 +41,9 @@ const GlobalStyle = createGlobalStyle`
   .text-gray {
     color: #CCD6F6;
   }
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Archivo Black', sans-serif!important;
+  }
  
 `
 

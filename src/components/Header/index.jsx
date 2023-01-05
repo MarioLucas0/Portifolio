@@ -17,15 +17,12 @@ export const Header = () => {
             </h3>
             <ul className={isMobile ? "nav-links-mobile" : "nav-links"}
             onClick={() => setMobile(false)}>
-                <Link to="/" className="home">
-                    <li>start</li>
-                </Link>
-                <Link to="/" className="catalogo">
+                <a href="#s1" className="catalogo">
                     <li>about me</li>
-                </Link>
-                <Link to="/" className="admin">
+                </a>
+                <a href="#s3" className="admin">
                     <li>Projects</li>
-                </Link> 
+                </a> 
                 <Link to="/" className="admin">
                     <li>Skills</li>
                 </Link> 
