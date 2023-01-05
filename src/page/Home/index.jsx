@@ -8,7 +8,16 @@ import { SlSocialLinkedin } from 'react-icons/sl';
 import flappy from "../../../src/assets/imgs/flappy.png";
 import pokedex from "../../../src/assets/imgs/pokedex.png";
 import serracomerce from "../../../src/assets/imgs/serracomerce.png";
+import cssimg from "../../assets/imgs/css.svg";
+import htmlimg from "../../assets/imgs/html.svg";
+import javaimg from "../../assets/imgs/java.svg";
+import jsimg from "../../assets/imgs/js.svg";
 import iconMe from "../../assets/imgs/Me.png";
+import reactimg from "../../assets/imgs/reactimg.svg";
+import sassimg from "../../assets/imgs/sass.svg";
+import springimg from "../../assets/imgs/springboot.svg";
+import styledimg from "../../assets/imgs/styled.svg";
+import tailwindimg from "../../assets/imgs/tailwind.svg";
 import "./style.css";
 export const Home = () => {
   const [user,setUser] =useState([])
@@ -181,11 +190,9 @@ technologies-used d-flex justify-content-end">
         <p className="text-1">view the archive</p>
         <div className="projects-container">
         {user?.map((repo,index) => (
-          <div key={index} className="projects" data-aos="fade-zoom-in"
-          data-aos-easing="ease-in-back"
-          data-aos-delay="100"
-          data-aos-offset="0"
-          data-aos-duration='1200'
+          <div key={index} className="projects"  data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
           >
             <div className="icons-projects w-100 d-flex justify-content-between">
               <FiFolder className="icon-folder"/>
@@ -215,7 +222,84 @@ technologies-used d-flex justify-content-end">
           </div>
       </div>
     </section>
-    <section className='w-100  s4'>
+    <section className="w-100  s4" id="s4">
+      <div className="container">
+        <h2 className="text-light display-3 pt-5">My Knowledge</h2>
+        <div className="imgs-languages" >
+          <div className="fundo-img" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="400"
+          >
+            <img src={reactimg} alt="" />
+          </div>
+          <div className="fundo-img" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="800"
+          >
+            <img src={cssimg} alt="" />
+          </div>
+          <div className="fundo-img" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="1200"
+          >
+            <img src={jsimg} alt="" />
+          </div>
+          <div className="fundo-img" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="1400"
+          >
+            <img src={htmlimg} alt="" />
+          </div>
+          <div className="fundo-img" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="1600"
+          >
+            <img src={sassimg} alt="" />
+          </div>
+          <div className="fundo-img" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="1800"
+          >
+            <img src={tailwindimg} alt="" />
+          </div>
+          <div className="fundo-img" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="2000"
+          >
+            <img src={styledimg} alt="" />
+          </div>
+          <div className="fundo-img" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="2200"
+          >
+            <img src={javaimg} alt="" />
+          </div>
+          <div className="fundo-img" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="2400"
+          >
+            <img src={springimg} alt="" />
+          </div>
+          <div className="fundo-img" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="2600"
+          >
+            <img src={reactimg} alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className='w-100  s5'>
       <div className="container" data-aos="fade-right">
         <h1 className="get-touch">Get In Touch</h1>
         <p>
