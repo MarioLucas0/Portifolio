@@ -20,11 +20,31 @@ import styledimg from "../../assets/imgs/styled.svg";
 import tailwindimg from "../../assets/imgs/tailwind.svg";
 import "./style.css";
 export const Home = () => {
+
   const [user,setUser] =useState([])
   const [projects,setProjects] =useState(6)
+  const [isHover, setIsHover] = useState(false);
+  const languages = ["React","CSS","JavaScript","HTML","SASS","TAILWIND","STYLED COMPONENTS","JAVA","SPRING BOOT","TYPESCRIPT"]
+  const [idText,setIdText] = useState("")
+
+
+  const handleMouseEnter = (e) => {
+     console.log(e)
+     if(e.target.id) {
+      setIdText(e.target.id)
+      setIsHover(true)
+     }
+  };
+
+  const handleMouseLeave = () => {
+      setIsHover(false);
+  };
+
+
 
   
-  const handleShowMore = () => {  
+  const handleShowMore = () => { 
+
     let maisProjects = projects + 6
     setProjects(maisProjects) 
   }
@@ -38,6 +58,8 @@ export const Home = () => {
       });
     });
   },[projects])
+
+
 
   return (
     <>
@@ -224,78 +246,161 @@ technologies-used d-flex justify-content-end">
     </section>
     <section className="w-100  s4" id="s4">
       <div className="container">
-        <h2 className="text-light display-3 pt-5">My Knowledge</h2>
+        <h2 className="text-light display-3" >My Knowledge</h2>
         <div className="imgs-languages" >
-          <div className="fundo-img" data-aos="fade-down"
+ 
+        <div className="container-languages">
+          <div className="fundo-img" id="0"  data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
           data-aos-delay="400"
+          onMouseEnter={(e) => handleMouseEnter(e)}
+          onMouseLeave={handleMouseLeave}
           >
-            <img src={reactimg} alt="" />
+            <img src={reactimg} alt="" /> 
           </div>
-          <div className="fundo-img" data-aos="fade-down"
+          <span  style={{display: isHover && idText == 0   ? 'block' : 'none'}} className="react-text"
+      >{languages[0]}</span>
+        </div>
+  
+
+          
+        <div className="container-languages">
+          <div className="fundo-img" id="1" data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
           data-aos-delay="800"
+          onMouseEnter={(e) => handleMouseEnter(e)}
+          onMouseLeave={handleMouseLeave}
           >
             <img src={cssimg} alt="" />
           </div>
-          <div className="fundo-img" data-aos="fade-down"
+
+          <span  style={{display: isHover && idText == 1   ? 'block' : 'none'}} className="react-text"
+              >{languages[1]}</span>
+        </div>
+
+
+        <div className="container-languages">
+          <div className="fundo-img" id="2"  data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
           data-aos-delay="1200"
+          onMouseEnter={(e) => handleMouseEnter(e)}
+          onMouseLeave={handleMouseLeave}
           >
             <img src={jsimg} alt="" />
           </div>
-          <div className="fundo-img" data-aos="fade-down"
+
+            <span  style={{display: isHover && idText == 2   ? 'block' : 'none'}} className="react-text"
+        >{languages[2]}</span>
+        </div>
+
+
+        <div className="container-languages">
+          <div className="fundo-img" id="3"  data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
           data-aos-delay="1400"
+          onMouseEnter={(e) => handleMouseEnter(e)}
+          onMouseLeave={handleMouseLeave}
           >
             <img src={htmlimg} alt="" />
           </div>
-          <div className="fundo-img" data-aos="fade-down"
+          
+            <span  style={{display: isHover && idText == 3   ? 'block' : 'none'}} className="react-text"
+        >{languages[3]}</span>
+        </div>
+
+        <div className="container-languages">
+          <div className="fundo-img"  id="4" data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
           data-aos-delay="1600"
+          onMouseEnter={(e) => handleMouseEnter(e)}
+          onMouseLeave={handleMouseLeave}
           >
             <img src={sassimg} alt="" />
           </div>
-          <div className="fundo-img" data-aos="fade-down"
+          
+            <span  style={{display: isHover && idText == 4   ? 'block' : 'none'}} className="react-text"
+        >{languages[4]}</span>
+        </div>
+
+        <div className="container-languages2">
+          <div className="fundo-img" id="5"  data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
           data-aos-delay="1800"
+          onMouseEnter={(e) => handleMouseEnter(e)}
+          onMouseLeave={handleMouseLeave}
           >
             <img src={tailwindimg} alt="" />
           </div>
-          <div className="fundo-img" data-aos="fade-down"
+          
+            <span  style={{display: isHover && idText == 5   ? 'block' : 'none'}} className="react-text"
+        >{languages[5]}</span>
+        </div> 
+
+        <div className="container-languages2">
+          <div className="fundo-img" id="6"  data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
           data-aos-delay="2000"
+          onMouseEnter={(e) => handleMouseEnter(e)}
+          onMouseLeave={handleMouseLeave}
           >
             <img src={styledimg} alt="" />
           </div>
-          <div className="fundo-img" data-aos="fade-down"
+
+            <span  style={{display: isHover && idText == 6   ? 'block' : 'none'}} className="react-text"
+        >{languages[6]}</span>
+        </div>  
+
+        <div className="container-languages2">
+          <div className="fundo-img" id="7" data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
           data-aos-delay="2200"
+          onMouseEnter={(e) => handleMouseEnter(e)}
+          onMouseLeave={handleMouseLeave}
           >
             <img src={javaimg} alt="" />
           </div>
-          <div className="fundo-img" data-aos="fade-down"
+
+          <span  style={{display: isHover && idText == 7   ? 'block' : 'none'}} className="react-text"
+      >{languages[7]}</span>
+        </div>
+
+        <div className="container-languages2">
+          <div className="fundo-img" id="8" data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
           data-aos-delay="2400"
+          onMouseEnter={(e) => handleMouseEnter(e)}
+          onMouseLeave={handleMouseLeave}
           >
             <img src={springimg} alt="" />
           </div>
-          <div className="fundo-img" data-aos="fade-down"
+
+          <span  style={{display: isHover && idText == 8   ? 'block' : 'none'}} className="react-text"
+      >{languages[8]}</span>
+        </div>
+
+        <div className="container-languages2">
+          <div className="fundo-img" id="9" data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
           data-aos-delay="2600"
+          onMouseEnter={(e) => handleMouseEnter(e)}
+          onMouseLeave={handleMouseLeave}
           >
             <img src={reactimg} alt="" />
           </div>
+          <span  style={{display: isHover && idText == 9   ? 'block' : 'none'}} className="react-text"
+      >{languages[9]}</span>
+        </div>
+        
         </div>
       </div>
     </section>
