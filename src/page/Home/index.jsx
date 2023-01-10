@@ -40,9 +40,6 @@ export const Home = () => {
       setIsHover(false);
   };
 
-
-
-  
   const handleShowMore = () => { 
 
     let maisProjects = projects + 6

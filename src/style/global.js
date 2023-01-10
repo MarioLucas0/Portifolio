@@ -17,6 +17,9 @@ const GlobalStyle = createGlobalStyle`
     outline: 0;
   
   }
+  #root {
+    overflow: hidden;
+  }
   body {
     background-color: var(--main-bg-color);
   } 
@@ -44,6 +47,7 @@ const GlobalStyle = createGlobalStyle`
   h1,h2,h3,h4,h5,h6 {
     font-family: 'Archivo Black', sans-serif!important;
   }
+  
  
 `
 

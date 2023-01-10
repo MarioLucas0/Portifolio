@@ -43,17 +43,23 @@
   width: 75%;
 
 }
+ul.nav-links  a li{
+  font-family: 'Archivo Black', sans-serif!important; 
+
+}
+
 
 .home,
-.catalogo,
-.admin,
+.about,
+.projects,
 .carrinho{
   text-decoration: none;
   color: white;
   font-size: 20px;
   padding: 10px 20px;
   margin: 0 10px;
-  cursor: pointer; 
+  cursor: pointer;
+  font-family: 'Archivo Black', sans-serif!important; 
 }
 
 .mobile-menu-icon{
@@ -83,10 +89,13 @@
       transition: all 0.5s ease-in-out;
       z-index: 10;
   }
+  ul.nav-links-mobile li{
+    font-family: 'Archivo Black', sans-serif!important; 
+  }
 
   .home,
-  .catalogo,
-  .admin,
+  .about,
+  .projects,
   .carrinho{
       color: aliceblue;
       text-align: center;

@@ -405,4 +405,63 @@ margin-left: 0;
   gap: 1.3rem;
 }
 
+@media (max-width: 360px) {
+   
+  .s1 .container-content {
+    flex-direction: column;
+    padding-top: 14rem;
+  }
+  .s1 .container-content .container-img .bg-img {
+    width: 31.5rem;
+    height: 34rem;
+  }
+  .s1 .container-content .container-img {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .s1 .container-content .container-img .bg-img  img{
+    max-width: 72%;
+  }
+  .s2 .container .text-built p {
+    width: 4rem;
+  }
+  .s2 .featured-projects {
+    text-align: inherit;
+    margin-top: 0;
+  }
+  .s2 .featured-projects .text-projects {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40rem;
+
+  }
+  .s2 .featured-projects .text-projects .technologies-used ul{ 
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: flex-start !important;
+    padding-inline: 1rem;
+  }
+  .s2 .featured-projects .text-projects .technologies-used ul li{ 
+    font-size: 1.7rem;
+  }
+  .s2 .featured-projects .text-projects p{
+    font-size: 2rem;
+  }
+  .s2 .featured-projects .text-projects h3{
+    font-size: 2.5rem;
+  }
+  .s2 .featured-projects .text-projects .project-explanation{
+    margin: 0;
+    width: 34.9rem;
+    height: 25.5rem;
+  }
+  .container .featured-projects .img-projects a img {
+    object-fit: contain;
+  }
+
+}
+
 
