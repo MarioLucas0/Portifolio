@@ -26,6 +26,13 @@ export const Home = () => {
   const [isHover, setIsHover] = useState(false);
   const languages = ["React","CSS","JavaScript","HTML","SASS","TAILWIND","STYLED COMPONENTS","JAVA","SPRING BOOT","TYPESCRIPT"]
   const [idText,setIdText] = useState("")
+ const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+      const position = window.pageYOffset;
+      setScrollPosition(position);
+  };
+
 
 
   const handleMouseEnter = (e) => {
@@ -54,12 +61,33 @@ export const Home = () => {
         duration : 2000
       });
     });
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
   },[projects])
 
 
 
   return (
     <>
+    <div className="info-icon">
+      <div className="linha linha1"></div>
+      <div className="icons pt-5 d-flex "  data-aos="fade-right">
+                <a href="https://github.com/MarioLucas0">
+                <FiGithub />
+                </a>
+                <a href="https://www.linkedin.com/in/mariolucas00/">
+                <SlSocialLinkedin />
+                </a>
+                <a href="https://www.instagram.com/m__lucaass/?next=%2Fmintbr.nft%2F">
+                <BsInstagram />
+                </a>
+              </div>
+      <div className="linha"></div>
+    </div>
     <section className="w-100  s1" id="s1">
       <div className="container h-100 pt-6">
         <div className="container-content d-flex ">
@@ -411,6 +439,11 @@ I'm a highly motivated junior developer looking for an opportunity to grow and d
         </a>  
       </div>
     </section>
+    <div className="scroll-bar">
+      <span style={{background: scrollPosition > 1 ?    "#1850E1" : "#131b2f"}}></span>
+      <span style={{background: scrollPosition > 1444 ?    "#1850E1" : "#131b2f"}} ></span>
+      <span style={{background: scrollPosition > 2888 ?    "#1850E1" : "#131b2f"}}></span>
+    </div>
   </>
   )
 }
