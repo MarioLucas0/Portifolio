@@ -1,5 +1,5 @@
 
-<img src="https://i.ibb.co/tPRG8Pm/image.png" height="200"  alt="image" border="0">
+<img src="https://i.ibb.co/tPRG8Pm/image.png" height="200"  width="30rem" alt="image" border="0">
 
 
 #  
