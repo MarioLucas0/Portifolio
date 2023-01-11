@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { BsInstagram } from 'react-icons/bs';
 import { FiExternalLink, FiFolder, FiGithub } from 'react-icons/fi';
 import { SlSocialLinkedin } from 'react-icons/sl';
-import flappy from "../../../src/assets/imgs/flappy.png";
+import intranetwerner from "../../../src/assets/imgs/intranetwerner.png";
 import pokedex from "../../../src/assets/imgs/pokedex.png";
 import serracomerce from "../../../src/assets/imgs/serracomerce.png";
 import cssimg from "../../assets/imgs/css.svg";
@@ -198,8 +198,8 @@ technologies-used tu-2 d-flex justify-content-end">
         </div>
         <div className="featured-projects ft-3  d-flex">
           <div className="img-projects"  data-aos="fade-right">
-          <a href="https://gameflappybird-ten.vercel.app/">
-          <img src={flappy} alt="" />
+          <a href="https://intranet-werner-front.vercel.app/">
+          <img src={intranetwerner} alt="" />
           </a>
           </div>
           <div className="text-projects" data-aos="fade-left">
@@ -217,13 +217,16 @@ technologies-used d-flex justify-content-end">
                 <li>ReactJs</li>
                 <li>Bootstrap</li>
                 <li>Styled Component</li>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>Postgres</li>
                </ul>
             </div>
             <div className="icons">
-             <a href="https://github.com/MarioLucas0/GameFlappyBird">
+             <a href="https://github.com/MarioLucas0/Intranet-Werner-Front">
                 <FiGithub />
               </a>
-             <a href="https://gameflappybird-ten.vercel.app/">
+             <a href="https://intranet-werner-front.vercel.app/">
                 <FiExternalLink />
               </a>
             </div>
