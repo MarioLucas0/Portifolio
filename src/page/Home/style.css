@@ -298,14 +298,7 @@
   z-index: 10;
 
 }
-.s2 .featured-projects .img-projects:hover {
 
-  border: 2px solid var(--color-blue-500);
- box-shadow: rgb(21, 15, 172) 0px 3px 8px;
- scale: 1.04;
- border-radius: 1rem;
-
-}
 .s2 .featured-projects .img-projects img{
   border-radius: 0.7rem;
   width: 67rem;
@@ -318,6 +311,10 @@
 .s2 .featured-projects .img-projects img:hover{
   -webkit-filter: none;	
 	filter: none;	
+  border: 2px solid var(--color-blue-500);
+  box-shadow: rgb(21, 15, 172) 0px 3px 8px;
+  scale: 1.04;
+  border-radius: 1rem;
 
 }
 .s2 .featured-projects .text-projects {
