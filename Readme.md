@@ -1,7 +1,7 @@
 
 
 
-<img src="https://i.ibb.co/tPRG8Pm/image.png"  height="500"  width="500"  alt="image" border="0">
+<img src="https://i.ibb.co/tPRG8Pm/image.png"  height="500"  width="700"  alt="image" border="0">
 
 
 #  
