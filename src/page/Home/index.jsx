@@ -445,7 +445,7 @@ I'm a highly motivated junior developer looking for an opportunity to grow and d
     <div className="scroll-bar">
       <span style={{background: scrollPosition > 1 ?    "#1850E1" : "#131b2f"}}></span>
       <span style={{background: scrollPosition > 1444 ?    "#1850E1" : "#131b2f"}} ></span>
-      <span style={{background: scrollPosition > 2888 ?    "#1850E1" : "#131b2f"}}></span>
+      <span style={{background: scrollPosition > 4000 ?    "#1850E1" : "#131b2f"}}></span>
     </div>
   </>
   )

@@ -1,10 +1,11 @@
 
-<img src="https://i.ibb.co/tPRG8Pm/image.png" height="500"  width="70%" alt="image" border="0">
+
+<img src="https://i.ibb.co/w7bSccP/image.png" height="500"  width="500"  alt="image" border="0">
 
 
 #  
  
-## Projeto final Portifolio
+## Projeto final Intranet Wermer
 
 
 
@@ -28,6 +29,9 @@ O projeto está desenvolvido utilizando as seguintes tecnologias:
 - Bootstrap
 - Styled Components
 - CSS
+- Postgres
+- Spring Boot
+- Java
 
 --- 
 
@@ -40,7 +44,7 @@ O projeto está desenvolvido utilizando as seguintes tecnologias:
 
 ## 🛠️ Projeto no ar
  
-* [Vercel](https://portifolio-sigma-inky.vercel.app)
+* [Vercel](https://intranet-werner-front.vercel.app/)
  
 ## 🎁 Expressões de gratidão
 

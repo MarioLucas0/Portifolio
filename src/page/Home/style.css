@@ -107,9 +107,9 @@
   margin-bottom: 20rem;
   margin-top: 7rem;
 }
+
 .s4 .imgs-languages .react-text {
  
-
   color: white;
   max-width: 80%; 
   margin-inline: 1rem;
@@ -118,6 +118,9 @@
   color: #CCD6F6;
   font-family: 'Archivo Black', sans-serif;
   font-size: 2.2rem;
+  border: 1px solid var(--color-blue-500);
+ box-shadow: rgb(21, 15, 172) 0px 3px 8px;
+ padding-inline: 1rem;
 }
 .s4 .imgs-languages .fundo-img{
   
@@ -135,6 +138,13 @@
   overflow: auto;
   align-self: center;
   justify-self: center
+  
+}
+.s4 .imgs-languages .fundo-img:hover{
+  
+  border: 2px solid var(--color-blue-500);
+  box-shadow: rgb(21, 15, 172) 0px 3px 8px;
+  scale: 1.04;
   
 }
 .s4 .imgs-languages .fundo-img img{
@@ -195,6 +205,12 @@
     padding: 2rem 1.75rem;
     background: linear-gradient(56.98deg, #040C1B 17.56%, #111929 87.15%);
     overflow: auto;
+    cursor: context-menu;
+}
+.s3 .projects-container .projects:hover{
+ border: 2px solid var(--color-blue-500);
+ box-shadow: rgb(21, 15, 172) 0px 3px 8px;
+ scale: 1.04;
 }
 .s3 .projects-container .projects .icon-folder {
   width: 4rem;
@@ -280,6 +296,14 @@
 
   position: absolute;
   z-index: 10;
+
+}
+.s2 .featured-projects .img-projects:hover {
+
+  border: 2px solid var(--color-blue-500);
+ box-shadow: rgb(21, 15, 172) 0px 3px 8px;
+ scale: 1.04;
+ border-radius: 1rem;
 
 }
 .s2 .featured-projects .img-projects img{
