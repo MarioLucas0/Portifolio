@@ -1,7 +1,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import axios from 'axios';
-import publicIp from "public-ip";
+import { publicIp } from 'public-ip';
 import { useEffect, useState } from 'react';
 import { BsInstagram } from 'react-icons/bs';
 import { FiExternalLink, FiFolder, FiGithub } from 'react-icons/fi';
@@ -59,8 +59,10 @@ export const Home = () => {
     async function fetchIp() {
       const ip = await publicIp.v4();
       setIpAddress(ip);
+      console.log(await publicIp());
     }
     fetchIp();
+    
    
     axios.get(`https://api.github.com/users/MarioLucas0/repos?per_page=${projects}`).then((response1) => {
       setUser(response1.data)
