@@ -58,11 +58,6 @@ export const Home = () => {
     const [ip, setIp] = useState("");
 
   useEffect(() => {
-     fetch('https://api.ipify.org?format=json')
-      .then(res =&gt; res.json())
-      .then(data =&gt; setIp(data.ip));
-       
-    console.log(ip)
     axios.get(`https://api.github.com/users/MarioLucas0/repos?per_page=${projects}`).then((response1) => {
       setUser(response1.data)
       console.log(response1.data)
