@@ -54,15 +54,17 @@ export const Home = () => {
   }
   
  
-    axios.get('https://api.ipify.org/?format=json')
+ 
+  
+
+  useEffect(() => {
+    
+       axios.get('https://api.ipify.org/?format=json')
       .then(response => {
       console.log("ip aki" + response)
         
       });
   
-  
-
-  useEffect(() => {
     axios.get(`https://api.github.com/users/MarioLucas0/repos?per_page=${projects}`).then((response1) => {
       setUser(response1.data)
       console.log(response1.data)
