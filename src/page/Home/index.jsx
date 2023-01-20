@@ -55,16 +55,14 @@ export const Home = () => {
   
  
  
-  
+    const [ip, setIp] = useState("");
 
   useEffect(() => {
-    
-       axios.get('https://api.ipify.org/?format=json')
-      .then(response => {
-      console.log("ip aki" + response)
-        
-      });
-  
+     fetch('https://api.ipify.org?format=json')
+      .then(res =&gt; res.json())
+      .then(data =&gt; setIp(data.ip));
+       
+    console.log(ip)
     axios.get(`https://api.github.com/users/MarioLucas0/repos?per_page=${projects}`).then((response1) => {
       setUser(response1.data)
       console.log(response1.data)
@@ -84,6 +82,7 @@ export const Home = () => {
 
   return (
     <>
+   
     <div className="info-icon">
       <div className="linha linha1"></div>
       <div className="icons pt-5 d-flex "  data-aos="fade-right">
