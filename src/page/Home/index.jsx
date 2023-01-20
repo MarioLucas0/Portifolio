@@ -28,6 +28,7 @@ export const Home = () => {
   const languages = ["React","CSS","JavaScript","HTML","SASS","TAILWIND","STYLED COMPONENTS","JAVA","SPRING BOOT","TYPESCRIPT"]
   const [idText,setIdText] = useState("")
  const [scrollPosition, setScrollPosition] = useState(0);
+    const [ipAddress, setIpAddress] = useState('');
 
   const handleScroll = () => {
       const position = window.pageYOffset;
@@ -53,7 +54,6 @@ export const Home = () => {
     let maisProjects = projects + 6
     setProjects(maisProjects) 
   }
-  const [ipAddress, setIpAddress] = useState('');
 
   useEffect(() => {
     async function fetchIp() {
