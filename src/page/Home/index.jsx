@@ -18,6 +18,7 @@ import sassimg from "../../assets/imgs/sass.svg";
 import springimg from "../../assets/imgs/springboot.svg";
 import styledimg from "../../assets/imgs/styled.svg";
 import tailwindimg from "../../assets/imgs/tailwind.svg";
+import ip from 'ip';
 import "./style.css";
 export const Home = () => {
 
