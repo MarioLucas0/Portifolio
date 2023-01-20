@@ -1,7 +1,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import axios from 'axios';
-import { publicIp } from 'public-ip';
+import { publicIp, publicIpv4, publicIpv6 } from 'public-ip';
 import { useEffect, useState } from 'react';
 import { BsInstagram } from 'react-icons/bs';
 import { FiExternalLink, FiFolder, FiGithub } from 'react-icons/fi';
@@ -56,12 +56,11 @@ export const Home = () => {
   }
 
   useEffect(() => {
-    async function fetchIp() {
-      const ip = await publicIp.v4();
-      setIpAddress(ip);
-      console.log(await publicIp());
-    }
-    fetchIp();
+
+    console.log(publicIp());
+    console.log(publicIpv6());
+    console.log(publicIpv4());
+
     
    
     axios.get(`https://api.github.com/users/MarioLucas0/repos?per_page=${projects}`).then((response1) => {
@@ -108,7 +107,7 @@ export const Home = () => {
             </div>
           </div>
           <div className="container-text">
-          <p>Meu endereço IP é: {ipAddress}</p>
+         
               <p className="text-light name"  data-aos="fade-right">Hello my name is <span>Mario Lucas</span></p>
               <h2 className="text-light display-1"  data-aos="fade-right">Developer FullStack</h2>
               <p className="fs-2 text-gray "  data-aos="fade-right">I enjoy creating solid, scalable front-end and back-end products with great user experiences.</p>
