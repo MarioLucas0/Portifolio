@@ -76,6 +76,7 @@ export const Home = () => {
 
   return (
     <>
+   
     <div className="info-icon">
       <div className="linha linha1"></div>
       <div className="icons pt-5 d-flex "  data-aos="fade-right">
