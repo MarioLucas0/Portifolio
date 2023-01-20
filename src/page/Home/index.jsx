@@ -52,8 +52,11 @@ export const Home = () => {
     let maisProjects = projects + 6
     setProjects(maisProjects) 
   }
+  const [ipAddress, setIpAddress] = useState('');
 
   useEffect(() => {
+    setIpAddress(ip.address());
+   
     axios.get(`https://api.github.com/users/MarioLucas0/repos?per_page=${projects}`).then((response1) => {
       setUser(response1.data)
       console.log(response1.data)
@@ -97,6 +100,7 @@ export const Home = () => {
             </div>
           </div>
           <div className="container-text">
+               <p>{"IP aki" +ipAddress}</p>
               <p className="text-light name"  data-aos="fade-right">Hello my name is <span>Mario Lucas</span></p>
               <h2 className="text-light display-1"  data-aos="fade-right">Developer FullStack</h2>
               <p className="fs-2 text-gray "  data-aos="fade-right">I enjoy creating solid, scalable front-end and back-end products with great user experiences.</p>
