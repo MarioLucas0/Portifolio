@@ -54,6 +54,12 @@ export const Home = () => {
   }
 
   useEffect(() => {
+    var requestIp = require('request-ip');
+
+// inside middleware handler
+var ip = requestIp.getClientIp(req); 
+
+console.log("ip aki" + ip);
     axios.get(`https://api.github.com/users/MarioLucas0/repos?per_page=${projects}`).then((response1) => {
       setUser(response1.data)
       console.log(response1.data)
