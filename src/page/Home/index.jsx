@@ -1,7 +1,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import axios from 'axios';
-import { publicIp, publicIpv4, publicIpv6 } from 'public-ip';
+//import { publicIp, publicIpv4, publicIpv6 } from 'public-ip';
 import { useEffect, useState } from 'react';
 import { BsInstagram } from 'react-icons/bs';
 import { FiExternalLink, FiFolder, FiGithub } from 'react-icons/fi';
@@ -57,9 +57,9 @@ export const Home = () => {
 
   useEffect(() => {
 
-    console.log(publicIp());
-    console.log(publicIpv6());
-    console.log(publicIpv4());
+    //console.log(publicIp());
+    //console.log(publicIpv6());
+   // console.log(publicIpv4());
 
     
    
