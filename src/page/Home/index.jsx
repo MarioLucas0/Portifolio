@@ -1,6 +1,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import axios from 'axios';
+import publicIp from "public-ip";
 import { useEffect, useState } from 'react';
 import { BsInstagram } from 'react-icons/bs';
 import { FiExternalLink, FiFolder, FiGithub } from 'react-icons/fi';
@@ -18,7 +19,6 @@ import sassimg from "../../assets/imgs/sass.svg";
 import springimg from "../../assets/imgs/springboot.svg";
 import styledimg from "../../assets/imgs/styled.svg";
 import tailwindimg from "../../assets/imgs/tailwind.svg";
-import ip from 'ip';
 import "./style.css";
 export const Home = () => {
 
@@ -56,7 +56,11 @@ export const Home = () => {
   const [ipAddress, setIpAddress] = useState('');
 
   useEffect(() => {
-    setIpAddress(ip.address());
+    async function fetchIp() {
+      const ip = await publicIp.v4();
+      setIpAddress(ip);
+    }
+    fetchIp();
    
     axios.get(`https://api.github.com/users/MarioLucas0/repos?per_page=${projects}`).then((response1) => {
       setUser(response1.data)
@@ -102,7 +106,7 @@ export const Home = () => {
             </div>
           </div>
           <div className="container-text">
-               <p>{"IP aki" +ipAddress}</p>
+          <p>Meu endereço IP é: {ipAddress}</p>
               <p className="text-light name"  data-aos="fade-right">Hello my name is <span>Mario Lucas</span></p>
               <h2 className="text-light display-1"  data-aos="fade-right">Developer FullStack</h2>
               <p className="fs-2 text-gray "  data-aos="fade-right">I enjoy creating solid, scalable front-end and back-end products with great user experiences.</p>
