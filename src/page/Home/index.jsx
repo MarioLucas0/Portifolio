@@ -215,7 +215,7 @@ technologies-used tu-2 d-flex justify-content-end">
           </div>
           <div className="text-projects" data-aos="fade-left">
             <p className="text-1">Featured Project</p>
-            <h3 className="text-title">Flappy Bird</h3>
+            <h3 className="text-title">Intranet Werner</h3>
             <div className="
 project-explanation">
                       <p>
