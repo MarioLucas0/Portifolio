@@ -219,7 +219,7 @@ technologies-used tu-2 d-flex justify-content-end">
             <div className="
 project-explanation">
                       <p>
-The little project is a copy of the famous game Flappy Bird and it is a very fun and easy game to play, perfect to pass the time and have fun.</p>
+TDuring my residency in software development at Serratec, I had the opportunity to create an Intranet system for the company Werner Fabrics. This system was developed to be used exclusively by the company's employees and provide a more efficient and secure communication between the different areas of the organization.</p>
             </div>
             <div className="
 technologies-used d-flex justify-content-end">
